@@ -16,10 +16,10 @@ p3 = plot(La(51:54),E(51:54),'^','MarkerSize',20,'MarkerEdgeColor','#77AC30','Ma
 p3.MarkerEdgeColor = [1 1 1];
 legend('#Li=0','#Li=1','#Li=2');
 set(gca,'FontSize',30,'FontName','Arial');
-box on
+
 title({'Geometry Optimization: Different La number (ISIF=0)';''})
 xlabel('# La') 
-ylabel('Single-point energy (eV)') 
+ylabel('Energy (eV)') 
 set(gcf,'Position',[0 0 1200 900])
 
 data = xlsread("PBE_isif3_sort.csv");
@@ -37,8 +37,7 @@ p6 = plot(La(51:54),E(51:54),'^','MarkerSize',20,'MarkerEdgeColor','#77AC30','Ma
 p6.MarkerEdgeColor = [1 1 1];
 legend('#Li=0','#Li=1','#Li=2');
 set(gca,'FontSize',30,'FontName','Arial');
-box on
 title({'Geometry Optimization: Different La number (ISIF=3)';''})
 xlabel('# La') 
-ylabel('Single-point energy (eV)') 
+ylabel('Energy (eV)') 
 set(gcf,'Position',[0 0 1200 900])
